@@ -13,7 +13,7 @@ public class GeneradorObstaculos : MonoBehaviour
     {
         GameObject obstaculoNuevo = Instantiate(obstaculo);
         obstaculoNuevo.transform.position = transform.position + new Vector3(0, 0, 0);
-        Destroy(gameObject, 10);
+        Destroy(gameObject, 25);
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class GeneradorObstaculos : MonoBehaviour
         {
             GameObject obstaculoNuevo = Instantiate(obstaculo);
             obstaculoNuevo.transform.position = transform.position + new Vector3(0, Random.Range(-altura,altura) , 0);
-            Destroy(gameObject, 10);
+            Destroy(gameObject, 25);
             tiempoInicial = 0;
         }
         else
