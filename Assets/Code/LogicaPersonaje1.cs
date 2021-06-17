@@ -6,6 +6,11 @@ public class LogicaPersonaje1 : MonoBehaviour
 {
     public float velocity = 1;
     private Rigidbody2D rb;
+
+    public ControladorEscena controladorEscena;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,6 @@ public class LogicaPersonaje1 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        controladorEscena.Perdiste();
     }
 }
