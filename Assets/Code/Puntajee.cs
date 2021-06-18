@@ -17,4 +17,6 @@ public class Puntajee : MonoBehaviour
     {
         GetComponent<TextMeshProUGUI>().text = puntaje.ToString();
     }
+
+
 }

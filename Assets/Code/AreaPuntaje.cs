@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AreaPuntaje : MonoBehaviour
 {
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +20,6 @@ public class AreaPuntaje : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Puntajee.puntaje++;
+  
     }
 }

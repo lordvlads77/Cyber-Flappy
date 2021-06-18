@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ControladorEscena : MonoBehaviour
 {
     public GameObject Perder;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,5 @@ public class ControladorEscena : MonoBehaviour
     
     }
 
-   
-
+ 
 }

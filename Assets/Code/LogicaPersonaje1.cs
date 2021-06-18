@@ -8,6 +8,7 @@ public class LogicaPersonaje1 : MonoBehaviour
     private Rigidbody2D rb;
 
     public ControladorEscena controladorEscena;
+    public AreaPreguntas areaPreguntas;
 
 
 
@@ -30,4 +31,12 @@ public class LogicaPersonaje1 : MonoBehaviour
     {
         controladorEscena.Perdiste();
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        areaPreguntas.preguntacion();
+        
+        
+    }
+    
+
 }
